@@ -48,7 +48,7 @@ j, err := live_price.GetAll()
 // Retrieve LivePrice Data By ID
 j, err := live_price.GetById("<id>")
 
-// Retrieve LivePrice Data By ID
+// Retrieve LivePrice Data By Symbol
 j, err := live_price.GetBySymbol("<symbol>")
 
 // Get API result (see simplejson)
