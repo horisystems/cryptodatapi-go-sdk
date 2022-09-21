@@ -2,7 +2,7 @@
 
   <img alt="cryptodatapi-go-sdk logo" src="assets/go.png" height="150" />
   <h3 align="center">cryptodatapi-go-sdk</h3>
-  <p align="center"><a href="https://moatsystems.com/covid19-api/">Crypto API</a> SDK for Golang. 🦠 </p>
+  <p align="center"><a href="https://moatsystems.com/crypto-api/">Crypto API</a> SDK for Golang. 🦠 </p>
 
 [![Release](https://img.shields.io/github/release/moatsystems/cryptodatapi-go-sdk.svg)](https://github.com/moatsystems/cryptodatapi-go-sdk/releases/latest)
 [![Go Report Card](https://goreportcard.com/badge/github.com/moatsystems/cryptodatapi-go-sdk)](https://goreportcard.com/report/github.com/moatsystems/cryptodatapi-go-sdk)
