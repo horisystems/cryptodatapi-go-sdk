@@ -1,10 +1,11 @@
 package client
 
 import (
+	"os"
 	"testing"
+
 	simplejson "github.com/bitly/go-simplejson"
 	"gopkg.in/stretchr/testify.v1/assert"
-	"os"
 )
 
 func TestApi(t *testing.T) {
@@ -18,15 +19,15 @@ func TestApi(t *testing.T) {
 	lp := c.LivePrice()
 	// history 2021
 	h21 := c.History(2021)
-	endpoints := []*Resource{c.TopGainers(), c.TopLosers(), c.Derivatives(), c.Dex(), c.Lending(), c.Spot(), NewResource(lp.Name, lp.Path), NewResource(h21.Name, h21.Path)/*, c.News()*/}
+	endpoints := []*Resource{c.TopGainers(), c.TopLosers(), c.Derivatives(), c.Dex(), c.Lending(), c.Spot(), NewResource(lp.Name, lp.Path), NewResource(h21.Name, h21.Path) /*, c.News()*/}
 	var res *simplejson.Json
 	var err error
 	var id string
 	for _, endpoint := range endpoints {
 		t.Log("begin to test " + endpoint.Name + "'s GetAll api")
 		res, err = endpoint.GetAll()
-		assert.Empty(t, err, endpoint.Name + " GetAll Api test failed")
-		
+		assert.Empty(t, err, endpoint.Name+" GetAll Api test failed")
+
 		id = ""
 		switch endpoint.Name {
 		case "Dex":
@@ -53,18 +54,15 @@ func TestApi(t *testing.T) {
 		}
 		t.Log("begin to test " + endpoint.Name + "'s GetByID api, ID: " + id)
 		_, err = endpoint.GetById(id)
-		assert.Empty(t, err, endpoint.Name + " GetByID Api test failed")
+		assert.Empty(t, err, endpoint.Name+" GetByID Api test failed")
 	}
 
-	
 	t.Log("begin to test LivePrice's GetBySymbol api")
 	_, err = lp.GetBySymbol("btc")
-	assert.Empty(t, err,  " LivePrice GetBySymbol  Api test failed")
+	assert.Empty(t, err, " LivePrice GetBySymbol  Api test failed")
 
-	
 	t.Log("begin to test History2021's GetBySymbol api")
 	_, err = h21.GetBySymbol("btc")
-	assert.Empty(t, err,  " History2021 GetBySymbol  Api test failed")
+	assert.Empty(t, err, " History2021 GetBySymbol  Api test failed")
 
 }
-

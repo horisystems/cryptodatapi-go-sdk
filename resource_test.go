@@ -2,12 +2,13 @@ package client
 
 import (
 	"testing"
+
 	"gopkg.in/stretchr/testify.v1/assert"
 )
 
 func TestResourcePath(t *testing.T) {
 	c := New()
-	
+
 	assert.Equal(t, c.TopGainers().Path, "/v1/gainers", "incorrect resource path")
 	assert.Equal(t, c.TopLosers().Path, "/v1/losers", "incorrect resource path")
 	assert.Equal(t, c.Derivatives().Path, "/v1/derivatives", "incorrect resource path")
