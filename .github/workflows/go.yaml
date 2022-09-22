@@ -28,7 +28,6 @@ jobs:
         run: go vet ./...
 
       - name: Run Go tests
-        #run: go test -mod=readonly -v -race ./...
         run: USER=${{ secrets.API_USERNAME }} PASS=${{ secrets.API_PASSWORD }} go test -v
 
       - name: Verify repo is unchanged
