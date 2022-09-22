@@ -1,8 +1,8 @@
 package client
 
 import (
-	"strconv"
 	simplejson "github.com/bitly/go-simplejson"
+	"strconv"
 )
 
 type HistoryResource struct {
@@ -12,7 +12,7 @@ type HistoryResource struct {
 func NewHistoryResource(year int) *HistoryResource {
 
 	r := &HistoryResource{
-		Resource:Resource{
+		Resource: Resource{
 			Name: "History",
 			Path: "/v1/hist_price_" + strconv.Itoa(year),
 		},
@@ -21,5 +21,5 @@ func NewHistoryResource(year int) *HistoryResource {
 }
 
 func (r *HistoryResource) GetBySymbol(symbol string) (*simplejson.Json, error) {
-	return getClient().http.request("GET", r.Path + "/symbol/" + symbol, nil)
+	return getClient().http.request("GET", r.Path+"/symbol/"+symbol, nil)
 }

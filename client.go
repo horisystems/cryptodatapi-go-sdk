@@ -27,7 +27,7 @@ func (c *Client) Auth(username, password string) (string, bool) {
 	if err != nil {
 		return "", false
 	}
-	
+
 	t, err := json.Get("Document").String()
 	if t == "" || err != nil {
 		return "", false
@@ -72,7 +72,7 @@ func (c *Client) News() *Resource {
 }
 
 func (c *Client) History(year int) *HistoryResource {
-	r:= NewHistoryResource(year)
+	r := NewHistoryResource(year)
 	return r
 }
 

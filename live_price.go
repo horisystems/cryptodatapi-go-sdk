@@ -19,7 +19,6 @@ func NewPriceResource() *PriceResource {
 	return r
 }
 
-
 func (r *PriceResource) GetBySymbol(symbol string) (*simplejson.Json, error) {
-	return getClient().http.request("GET", r.Path + "/symbol/" + symbol, nil)
+	return getClient().http.request("GET", r.Path+"/symbol/"+symbol, nil)
 }
