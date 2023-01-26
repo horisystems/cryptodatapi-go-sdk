@@ -65,6 +65,7 @@ c.TopGainers()
 c.TopLosers()
 c.History(2021)
 c.History(2022)
+c.History(2023)
 c.Derivatives()
 c.Dex()
 c.Lending()
@@ -90,4 +91,4 @@ This project is licensed under the [BSD 3-Clause License](LICENSE) - see the fil
 
 #### Copyright
 
-(c) 2020 - 2022 [Moat Systems Limited](https://moatsystems.com).
+(c) 2020 - 2023 [Moat Systems Limited](https://moatsystems.com).
