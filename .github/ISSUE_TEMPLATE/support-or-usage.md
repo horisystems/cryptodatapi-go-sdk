@@ -10,7 +10,7 @@ assignees: ''
 <!--
 Please read and follow the instructions before submitting an issue:
 
-- Ensure you've read our documentation, especially the [README](https://github.com/moatsystems/cryptodatapi-go-sdk/blob/master/README.md) since it may contain information that helps you solve your issue.
+- Ensure you've read our documentation, especially the [README](https://github.com/horisystems/cryptodatapi-go-sdk/blob/master/README.md) since it may contain information that helps you solve your issue.
 - If you're reporting a bug, ensure it isn't already fixed in the latest version of cryptodatapi-go-sdk.
 -->
 

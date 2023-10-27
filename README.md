@@ -2,12 +2,12 @@
 
   <img alt="cryptodatapi-go-sdk logo" src="assets/go.png" height="150" />
   <h3 align="center">cryptodatapi-go-sdk</h3>
-  <p align="center"><a href="https://moatsystems.com/crypto-api/">Crypto API</a> SDK for Golang.</p>
+  <p align="center"><a href="https://horisystems.com/crypto-api/">Crypto API</a> SDK for Golang.</p>
 
-[![Release](https://img.shields.io/github/release/moatsystems/cryptodatapi-go-sdk.svg)](https://github.com/moatsystems/cryptodatapi-go-sdk/releases/latest)
-[![Go Report Card](https://goreportcard.com/badge/github.com/moatsystems/cryptodatapi-go-sdk)](https://goreportcard.com/report/github.com/moatsystems/cryptodatapi-go-sdk)
-[![Go Reference](https://pkg.go.dev/badge/github.com/moatsystems/cryptodatapi-go-sdk.svg)](https://pkg.go.dev/github.com/moatsystems/cryptodatapi-go-sdk)
-[![License](https://img.shields.io/github/license/moatsystems/cryptodatapi-go-sdk)](/LICENSE)
+[![Release](https://img.shields.io/github/release/horisystems/cryptodatapi-go-sdk.svg)](https://github.com/horisystems/cryptodatapi-go-sdk/releases/latest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/horisystems/cryptodatapi-go-sdk)](https://goreportcard.com/report/github.com/horisystems/cryptodatapi-go-sdk)
+[![Go Reference](https://pkg.go.dev/badge/github.com/horisystems/cryptodatapi-go-sdk.svg)](https://pkg.go.dev/github.com/horisystems/cryptodatapi-go-sdk)
+[![License](https://img.shields.io/github/license/horisystems/cryptodatapi-go-sdk)](/LICENSE)
 
 </div>
 
@@ -16,7 +16,7 @@
 ### Getting Started
  
 ```golang
-import "github.com/moatsystems/cryptodatapi-go-sdk"
+import "github.com/horisystems/cryptodatapi-go-sdk"
 ```
 
 #### Dependence
@@ -91,4 +91,4 @@ This project is licensed under the [BSD 3-Clause License](LICENSE) - see the fil
 
 #### Copyright
 
-(c) 2020 - 2023 [Moat Systems Limited](https://moatsystems.com).
+(c) 2020 - 2023 [Hori Systems Limited](https://horisystems.com).
